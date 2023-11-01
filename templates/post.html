@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mangalib</title>
+</head>
+<body>
+{% for i in post_key %}
+    <div>
+        <img src={{i.image.url}}>
+        <h1>{{i.title}}</h1>
+        <p>{{i.description}}</p>
+        <p>Ongoing: {{i.ongoing}}</p>
+        {{i.created_time}} <br>
+    </div>
+{% endfor %}
+</body>
+</html>
